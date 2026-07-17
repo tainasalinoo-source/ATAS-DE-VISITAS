@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f4f6fb;
+    color:#333;
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:260px;
+    background:#1e3a8a;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    padding:30px 20px;
+}
+
+.logo h2{
+    margin-bottom:8px;
+}
+
+.logo p{
+    opacity:.8;
+    margin-bottom:40px;
+}
+
+.menu{
+    background:none;
+    border:none;
+    color:white;
+    text-align:left;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.25s;
+}
+
+.menu:hover{
+    background:rgba(255,255,255,.15);
+}
+
+.menu.active{
+    background:white;
+    color:#1e3a8a;
+    font-weight:600;
+}
+
+.conteudo{
+    flex:1;
+    padding:40px;
+    overflow:auto;
+}
+
+h1{
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+input,
+textarea{
+    width:100%;
+    border:1px solid #d9d9d9;
+    border-radius:10px;
+    padding:12px;
+    font-size:15px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+.principal{
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+}
+
+.principal:hover{
+    background:#1d4ed8;
+}
+
+.copiar{
+    margin-top:15px;
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.copiar:hover{
+    background:#15803d;
+}
+
+.oculto{
+    display:none;
+}
+
+.itemHistorico{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+@media(max-width:900px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .conteudo{
+        padding:20px;
+    }
+
+}
