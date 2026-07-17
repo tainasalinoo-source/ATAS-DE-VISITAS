@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atas Inteligentes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6a4d6f0c9d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <h2>📋 Atas Inteligentes</h2>
+
+        <p>Gestão de Visitas</p>
+
+    </div>
+
+    <button class="menu active" onclick="mostrarPagina('novaAta')">
+        📝 Nova Ata
+    </button>
+
+    <button class="menu" onclick="mostrarPagina('historico')">
+        📚 Histórico
+    </button>
+
+    <button class="menu" onclick="mostrarPagina('empresas')">
+        🏢 Empresas
+    </button>
+
+    <button class="menu" onclick="mostrarPagina('relatorios')">
+        📊 Relatórios
+    </button>
+
+</div>
+
+
+<div class="conteudo">
+
+<section id="novaAta">
+
+<h1>Nova Ata</h1>
+
+<div class="card">
+
+<label>Empresa</label>
+
+<input type="text" id="empresa" placeholder="Nome da empresa">
+
+<label>Contato</label>
+
+<input type="text" id="contato" placeholder="Nome do contato">
+
+<label>Assunto</label>
+
+<input type="text" id="assunto" placeholder="Assunto da visita">
+
+<label>Transcrição</label>
+
+<textarea id="transcricao" rows="14" placeholder="Cole aqui toda a conversa..."></textarea>
+
+<button class="principal" onclick="gerarAta()">
+
+✨ Gerar Ata
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Ata Gerada</h2>
+
+<textarea id="resultado" rows="20"></textarea>
+
+<button class="copiar" onclick="copiarAta()">
+
+📋 Copiar Ata
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<section id="historico" class="oculto">
+
+<h1>Histórico</h1>
+
+<div id="listaHistorico"></div>
+
+</section>
+
+
+
+<section id="empresas" class="oculto">
+
+<h1>Empresas</h1>
+
+<p>Em breve.</p>
+
+</section>
+
+
+
+<section id="relatorios" class="oculto">
+
+<h1>Relatórios</h1>
+
+<p>Em breve.</p>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
